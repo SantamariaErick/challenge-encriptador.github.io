@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ebeff7;
+}
+.container {
+  
+  display: flex;
+  height: 100vh;
+}
+/* derecha */
+.area_response{
+  display: none;
+}
+.right {
+  width: 30%;
+  background-size: cover;
+  background-position: center;
+  margin: 3vh 2vh 3vh 2vh;
+}
+.error-message {
+  border-radius: 30px;
+  background-color: #fff;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.img-person > img {
+  display: flex;
+  margin: auto;
+}
+
+.message {
+  text-align: center;
+  padding: 0 1vh 0 1vh;
+  margin-top: 2vh;
+  font-size: 24px;
+}
+
+.content {
+  height: 100%;
+}
+
+.btn_copy {
+  height: 80%;
+  width: 100%;
+  display: flex;
+}
+.copy {
+  margin-top: 100%;
+  margin: auto auto 0 auto;
+}
+
+/* izquierda */
+.left {
+  width: 70%;
+  padding: 20px;
+}
+
+.img_a {
+  height: 10%;
+  display: block;
+}
+
+.text_area_input {
+  height: 75%;
+  display: grid;
+  place-items: center;
+}
+
+.text_area_input > textarea {
+  margin: 2vh auto;
+  width: 700px;
+  height: 80%;
+  box-sizing: border-box;
+  background-color: #ffffff00;
+  resize: none;
+  border: none;
+  color: #0a3871;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.response{
+  color: #0a3871;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text_area_input > textarea:focus {
+  outline: none;
+}
+
+.text_area_input > textarea::placeholder {
+  color: #0a3871;
+  font-size: 32px;
+}
+
+.buttons_info {
+  display: grid;
+  place-items: center;
+}
+
+.info {
+  width: 54vh;
+  padding: 1vh 0;
+  place-items: start;
+  width: 680px;
+  text-align: start;
+}
+
+button {
+  border-color: #0a3871;
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+}
+
+.encrypt {
+  background: #0a3871;
+  color: #fff;
+  margin-right: 2vh;
+}
+.uncrypt {
+  color: #0a3871;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+    max-width: 800px;
+  }
+  .left {
+    width: 100%;
+    order: 0;
+  }
+  .right{
+    order: 1;
+    width: 100%;
+    margin: 80px 0 0 0;
+  }
+  .text_area_input > textarea {
+    width: 100%;
+  }
+  .info{
+    max-width: 300px;
+  }
+  .buttons_info{
+    max-width: 300px;
+    flex-direction: column;
+  }
+  .error-message{
+    min-height: 600px;
+  }
+
+}

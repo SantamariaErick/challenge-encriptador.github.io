@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="img_a"><img src="./img/a.svg" alt="a" srcset="" /></div>
+        <div class="text_area_input">
+          <textarea
+            placeholder="Ingrese el texto aquí"
+            name="inp_text_to_encrypt"
+            id="inp_text_to_encrypt"
+            cols="30"
+            rows="10"
+            oninput="onChangeInputText()"
+          ></textarea>
+        </div>
+        <div class="buttons_info">
+          <div class="info">
+            <span><img src="/img/exclamation.svg" alt="" /></span>
+            Solo letras minúsculas y sin acentos
+          </div>
+          <div class="buttons">
+            <button type="button" class="encrypt" onclick="onClickEncrypt();">Encriptar</button>
+            <button type="button" class="uncrypt" onclick="onClickUncrypt();">Desencriptar</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="error-message">
+          <div class="area_response" id="area_response">
+            <p class="response" id="response">
+            </p>
+          </div>
+          <div class="content" id="no_text_message">
+            <div class="img-person">
+              <img
+                src="./img/person.svg"
+                alt="Imagen persona buscando"
+                srcset=""
+              />
+              <p class="message"><b>Ningún mensaje fue encontrado</b></p>
+              <p class="message">
+                Ingresa el texto que desees encriptar o desencriptar
+              </p>
+            </div>
+          </div>
+          <div class="btn_copy">
+            <button type="button" class="copy" onclick="onClickCopy()">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
